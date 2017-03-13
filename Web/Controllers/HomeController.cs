@@ -1,16 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using $safeprojectname$.Services.Contracts;
 
 namespace Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
+        private readonly IApplicationService _applicationService;
+
+        public HomeController(IApplicationService applicationService)
+        {
+            _applicationService = applicationService;
+        }
+
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            var app = _applicationService.GetApp();
+            ViewBag.Title = "Home Page "+app?.Description;
 
             return View();
         }

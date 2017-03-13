@@ -1,0 +1,67 @@
+﻿@model $safeprojectname$.DataObjects.ViewModels.LoginViewModel
+@using $safeprojectname$.Resources
+@{
+    Layout = "";
+}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body class="login">
+    <div>
+        <div class="login_wrapper">
+            <div class="animate form login_form">
+                <section class="login_content">
+                    @using (Html.BeginForm("Login"))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        <h1>Login</h1>
+                        if (@ViewData.ModelState.IsValid == false)
+                        {
+                            <div class="error-area">
+                                @Html.ValidationMessage("invalid")
+                            </div>
+                        }
+
+                        <div>
+                            @Html.ValidationMessageFor(m => m.LoginId)
+                            @Html.TextBoxFor(m => m.LoginId, new { @class = "form-control", @placeholder = @language.LoginId })
+                        </div>
+                            <div>
+                                @Html.ValidationMessageFor(m => m.Password)
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = @language.Password })
+                            </div>
+                            <div>
+                                <button class="btn btn-default" type="submit">Login</button>
+                                <a class="reset_pass" href="#">Forget your password?</a>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="separator">
+
+                                <div class="clearfix"></div>
+                                <br />
+
+                                <div>
+                                    <h1><i class="fa fa-book"></i> ThoTran Backend Solution Template</h1>
+                                    <p>©@DateTime.Now.Year All Rights Reserved. Power By Tho.Tran</p>
+                                </div>
+                            </div>
+                    }
+                </section>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
