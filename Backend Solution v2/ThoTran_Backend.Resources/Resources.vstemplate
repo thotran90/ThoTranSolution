@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ThoTran Backend Solution Resource Language</Name>
+    <Description>ThoTran Backend Solution: Resources</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ThoTran_Backend.Resources</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ThoTran_Backend.Resources.csproj" File="ThoTran_Backend.Resources.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="language.resx">language.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="language.Designer.cs">language.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="language.vi.resx">language.vi.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="language.vi.Designer.cs">language.vi.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="message.resx">message.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="message.Designer.cs">message.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="message.vi.resx">message.vi.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="message.vi.Designer.cs">message.vi.Designer.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

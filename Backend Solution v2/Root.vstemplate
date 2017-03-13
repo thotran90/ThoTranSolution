@@ -1,0 +1,51 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>ThoTran Backend Solution Template</Name>
+    <Description>ASP.NET MVC - ThoTran Backend Solution Template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BackendSolution</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+	<ProjectCollection>
+            <ProjectTemplateLink ProjectName="$projectname$.DataObjects" CopyParameters="true">
+                ThoTran_Backend.DataObjects\DataObjects.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.DependencyInjection" CopyParameters="true">
+                ThoTran_Backend.DependencyInjection\DI.vstemplate
+            </ProjectTemplateLink>
+	    <ProjectTemplateLink ProjectName="$projectname$.Domain">
+                ThoTran_Backend.Domain\Domain.vstemplate
+            </ProjectTemplateLink>
+	    <ProjectTemplateLink ProjectName="$projectname$.EntityFramework" CopyParameters="true">
+                ThoTran_Backend.EntityFramework\EntityFramework.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Repositories.Contracts" CopyParameters="true">
+                ThoTran_Backend.Repositories.Contracts\RepositoryContracts.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Repositories.EF" CopyParameters="true">
+                ThoTran_Backend.Repositories.EF\Repository.vstemplate
+            </ProjectTemplateLink>
+	    <ProjectTemplateLink ProjectName="$projectname$.Resources" CopyParameters="true">
+                ThoTran_Backend.Resources\Resources.vstemplate
+            </ProjectTemplateLink>
+	    <ProjectTemplateLink ProjectName="$projectname$.Services" CopyParameters="true">
+               ThoTran_Backend.Services\Services.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Services.Contracts" CopyParameters="true">
+                ThoTran_Backend.Services.Contracts\ServicesContracts.vstemplate
+            </ProjectTemplateLink>
+	    <ProjectTemplateLink ProjectName="$projectname$.Web" CopyParameters="true">
+                Web\Web.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ThoTran Backend Solution DbContext with Entity Framework</Name>
+    <Description>ThoTran Backend Solution: Db Context</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ThoTran_Backend.EntityFramework</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ThoTran_Backend.EntityFramework.csproj" File="ThoTran_Backend.EntityFramework.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AppDbContext.cs">AppDbContext.cs</ProjectItem>
+      <Folder Name="Mapping" TargetFolderName="Mapping">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationInformationMapping.cs">ApplicationInformationMapping.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Migrations" TargetFolderName="Migrations">
+        <ProjectItem ReplaceParameters="true" TargetFileName="201703130717307_Init-DB.cs">201703130717307_Init-DB.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="201703130717307_Init-DB.Designer.cs">201703130717307_Init-DB.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="201703130717307_Init-DB.resx">201703130717307_Init-DB.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

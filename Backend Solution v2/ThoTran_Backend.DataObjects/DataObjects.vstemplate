@@ -1,0 +1,41 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ThoTran Backend Solution Data Objects</Name>
+    <Description>ThoTran Backend Solution: Data object</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ThoTran_Backend.DataObjects</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ThoTran_Backend.DataObjects.csproj" File="ThoTran_Backend.DataObjects.csproj" ReplaceParameters="true">
+      <Folder Name="Arguments" TargetFolderName="Arguments">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginArgument.cs">LoginArgument.cs</ProjectItem>
+      </Folder>
+      <Folder Name="DataTransferObjects" TargetFolderName="DataTransferObjects">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppInformationDto.cs">AppInformationDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserDto.cs">UserDto.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppInformationViewModel.cs">AppInformationViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginViewModel.cs">LoginViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserViewModel.cs">UserViewModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Wrapper" TargetFolderName="Wrapper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppInformationWrapper.cs">AppInformationWrapper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserWrapper.cs">UserWrapper.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

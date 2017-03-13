@@ -1,0 +1,13 @@
+﻿
+.error-area {
+    padding:10px;
+    border: #000000 1px solid;
+    height:100%;
+    border-radius:3px;
+    margin-bottom:10px;
+    text-align:left;
+}
+.field-validation-error {
+    color: #ff0000;
+    font-style:italic;
+}
