@@ -2,9 +2,9 @@
 using Autofac.Integration.Mvc;
 using System.Reflection;
 using System.Web.Mvc;
-using $safeprojectname$.DependencyInjection;
+using $safeprojectname$;
 
-namespace Web.App_Start
+namespace $safeprojectname$.App_Start
 {
     public class AutofacConfiguration
     {

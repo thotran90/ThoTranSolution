@@ -1,5 +1,5 @@
 ﻿using System.Web.Mvc;
-using $safeprojectname$.Services.Contracts;
+using $safeprojectname$;
 
 namespace Web.Controllers
 {

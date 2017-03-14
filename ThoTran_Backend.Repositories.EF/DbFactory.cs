@@ -1,20 +1,19 @@
 ﻿using System.Data.Entity;
-using $safeprojectname$.EntityFramework;
-using $safeprojectname$.Repositories.EF.Contracts;
+using $safeprojectname$.Contracts;
 
-namespace $safeprojectname$.Repositories.EF
+namespace $safeprojectname$
 {
     public class DbFactory : IDbFactory
+{
+    private static DbContext _dbContext;
+    public DbFactory()
     {
-        private static DbContext _dbContext;
-        public DbFactory()
-        {
-            if (_dbContext == null)
-                _dbContext = new AppDbContext();
-        }
+        if (_dbContext == null)
+            _dbContext = new $safeprojectname$.AppDbContext();
+    }
 
-        public DbContext GetInstance()
-            => _dbContext ?? (_dbContext = new AppDbContext());
+    public DbContext GetInstance()
+        => _dbContext ?? (_dbContext = new $safeprojectname$.AppDbContext());
 
     }
 }

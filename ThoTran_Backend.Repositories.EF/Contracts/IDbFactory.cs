@@ -1,9 +1,9 @@
 ﻿using System.Data.Entity;
 
-namespace $safeprojectname$.Repositories.EF.Contracts
+namespace $safeprojectname$.Contracts
 {
     public interface IDbFactory
-    {
-        DbContext GetInstance();
-    }
+{
+    DbContext GetInstance();
+}
 }

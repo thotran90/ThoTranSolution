@@ -1,8 +1,8 @@
-﻿namespace $safeprojectname$.Domain.Core
+﻿namespace $safeprojectname$.Core
 {
     public class ApplicationInformation
-    {
-        public int AppId { get; set; }
-        public string Description { get; set; }
-    }
+{
+    public int AppId { get; set; }
+    public string Description { get; set; }
+}
 }

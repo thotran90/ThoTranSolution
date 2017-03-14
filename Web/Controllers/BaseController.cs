@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Web;
 using System.Web.Mvc;
-using Web.Models;
+using $safeprojectname$.Models;
 
-namespace Web.Controllers
+namespace $safeprojectname$.Controllers
 {
     [Authorize]
     public class BaseController : Controller

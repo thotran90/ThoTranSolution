@@ -2,9 +2,9 @@
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Web.App_Start;
+using $safeprojectname$.App_Start;
 
-namespace Web
+namespace $safeprojectname$
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

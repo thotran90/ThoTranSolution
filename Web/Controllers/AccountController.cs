@@ -1,16 +1,16 @@
 ﻿using System.Web.Mvc;
-using $safeprojectname$.DataObjects.Arguments;
-using $safeprojectname$.DataObjects.ViewModels;
-using $safeprojectname$.Resources;
-using $safeprojectname$.Services.Contracts;
+using $safeprojectname$.Arguments;
+using $safeprojectname$.ViewModels;
+using $safeprojectname$;
+
 using Web.Models;
 
 namespace Web.Controllers
 {
     public class AccountController : BaseController
     {
-        private readonly IUserService _userService;
-        public AccountController(IUserService userService)
+        private readonly $safeprojectname$.IUserService _userService;
+        public AccountController($safeprojectname$.IUserService userService)
         {
             this._userService = userService;
         }

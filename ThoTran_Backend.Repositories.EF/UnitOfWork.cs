@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Linq;
-using $safeprojectname$.Repositories.Contracts;
-using $safeprojectname$.Repositories.EF.Contracts;
+using $safeprojectname$.Contracts;
+using $safeprojectname$.Contracts;
 
-namespace $safeprojectname$.Repositories.EF
+namespace $safeprojectname$
 {
     public class UnitOfWork : IUnitOfWork
     {

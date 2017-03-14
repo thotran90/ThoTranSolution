@@ -1,20 +1,17 @@
 ﻿using Autofac;
-using $safeprojectname$.Repositories.Contracts;
-using $safeprojectname$.Repositories.EF;
-using $safeprojectname$.Repositories.EF.Contracts;
 
-namespace $safeprojectname$.DependencyInjection
+namespace $safeprojectname$
 {
     public class CoreModule : Module
+{
+    protected override void Load(ContainerBuilder builder)
     {
-        protected override void Load(ContainerBuilder builder)
-        {
-            builder.RegisterType<DbFactory>().As<IDbFactory>().InstancePerRequest();
-            builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerRequest();
-            builder.RegisterGeneric(typeof(EfRepository<>))
-                .As(typeof(IRepository<>))
-                .InstancePerDependency();
-            base.Load(builder);
-        }
+        builder.RegisterType <$safeprojectname$.DbFactory>().As <$safeprojectname$.Contracts.IDbFactory>().InstancePerRequest();
+        builder.RegisterType <$safeprojectname$.UnitOfWork>().As <$safeprojectname$.IUnitOfWork>().InstancePerRequest();
+        builder.RegisterGeneric(typeof($safeprojectname$.EfRepository<>))
+            .As(typeof($safeprojectname$.IRepository<>))
+            .InstancePerDependency();
+        base.Load(builder);
     }
+}
 }

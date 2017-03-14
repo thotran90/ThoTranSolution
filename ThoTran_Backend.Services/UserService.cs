@@ -1,12 +1,12 @@
-﻿using $safeprojectname$.DataObjects.Arguments;
-using $safeprojectname$.DataObjects.DataTransferObjects;
-using $safeprojectname$.Services.Contracts;
+﻿using $safeprojectname$.Arguments;
+using $safeprojectname$.DataTransferObjects;
+using $safeprojectname$;
 
-namespace $safeprojectname$.Services
+namespace $safeprojectname$
 {
     public class UserService : IUserService
     {
-        public UserDto LoginByPassword(LoginArgument arg)
+    public $safeprojectname$.DataTransferObjects.UserDto LoginByPassword($safeprojectname$.Arguments.LoginArgument arg)
         {
             return new UserDto()
             {

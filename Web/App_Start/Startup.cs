@@ -8,8 +8,8 @@ using System.Configuration;
 using System.Security.Claims;
 using System.Web.Helpers;
 
-[assembly: OwinStartup(typeof(Web.App_Start.Startup))]
-namespace Web.App_Start
+[assembly: OwinStartup(typeof($safeprojectname$.App_Start.Startup))]
+namespace $safeprojectname$.App_Start
 {
     public class Startup
     {

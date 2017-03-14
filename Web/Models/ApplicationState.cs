@@ -1,4 +1,4 @@
-﻿namespace Web.Models
+﻿namespace $safeprojectname$.Models
 {
     public class ApplicationState
     {

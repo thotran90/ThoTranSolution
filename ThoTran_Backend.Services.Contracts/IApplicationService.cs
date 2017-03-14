@@ -1,6 +1,6 @@
-﻿using $safeprojectname$.DataObjects.DataTransferObjects;
+﻿using $safeprojectname$.DataTransferObjects;
 
-namespace $safeprojectname$.Services.Contracts
+namespace $safeprojectname$
 {
     public interface IApplicationService
     {

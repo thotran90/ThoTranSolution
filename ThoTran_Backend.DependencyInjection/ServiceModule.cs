@@ -1,21 +1,19 @@
 ﻿using Autofac;
-using $safeprojectname$.Services;
-using $safeprojectname$.Services.Contracts;
 
-namespace $safeprojectname$.DependencyInjection
+namespace $safeprojectname$
 {
     public class ServiceModule : Module
+{
+    protected override void Load(ContainerBuilder builder)
     {
-        protected override void Load(ContainerBuilder builder)
-        {
-            // Add your service here
-            builder.RegisterType<ApplicationService>()
-                .As<IApplicationService>()
-                .InstancePerRequest();
-            builder.RegisterType<UserService>()
-               .As<IUserService>()
-               .InstancePerRequest();
-            base.Load(builder);
-        }
+        // Add your service here
+        builder.RegisterType <$safeprojectname$.ApplicationService > ()
+             .As <$safeprojectname$.IApplicationService > ()
+              .InstancePerRequest();
+        builder.RegisterType <$safeprojectname$.UserService > ()
+            .As <$safeprojectname$.IUserService > ()
+             .InstancePerRequest();
+        base.Load(builder);
     }
+}
 }
